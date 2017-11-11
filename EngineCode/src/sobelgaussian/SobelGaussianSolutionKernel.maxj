@@ -1,0 +1,71 @@
+/**
+ * Document: MaxCompiler Training (maxcompiler-training.pdf)
+ * Chapter: 2
+ * Exercise Solution: 3
+ * Summary:
+ * 	 Kernel that performs a 7x7 Gaussian blur to remove minor detail
+ *   in the image then performs 3x3 Sobel edge detection.
+ *   The Sobel coefficients are declared statically in a 3x3 array.
+ *   The Gaussian coefficients are stored in 7-element 1D array and
+ *   are applied in one dimension, then the other.
+ *   At the border of the image, the output is set to 0 . The 3-pixel
+ *   boundary condition of the Gaussian blur is not taken into account
+ *   for simplicity.
+ */
+package sobelgaussian;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+
+class SobelGaussianSolutionKernel extends Kernel {
+// global vars
+    private final double beta = 1.5; // interaction parameter
+    private final double invVar = 5.0; // 1/(2*variance) of gaussian noise, since div is more costly than mult
+    
+	protected SobelGaussianSolutionKernel(KernelParameters parameters) {
+		super(parameters);
+
+		int height = 256, width = 256;
+        int nColors = 8;
+        double b = beta / nColors;
+        
+		DFEVar inImage = io.input("inImage", dfeInt(32));
+
+        // initialize priors (frequencies of colors)
+        Memory<DFEVar> priors = mem.alloc(dfeUInt(32), nColors);
+        priors.mapToCPU("priors");
+        DFEVar sqrt = priors.read(inImage.cast(dfeUInt(8)));
+        
+        //initialize color count arrray
+        DFEVectorType colorCounts = new DFEVector(dfeUInt32(), nColors); // precision must be at least height*width 
+        int i;
+        for (i=0; i<nColors; ++i){
+            colorCounts[i]=0;
+        }
+		
+		// count neighbors
+		// TODO: handle edge and corner pixels
+		for (i = 1; i < 4; i++) {
+		    colorCounts[stream.offset(inImage, i)] += 1;
+		    colorCounts[stream.offset(inImage, i)] += 1;
+		    colorCounts[stream.offset(inImage, i * width)] += 1;
+		    colorCounts[stream.offset(inImage, -i * width)] += 1;
+		}
+		
+		
+		DFEVar result = constant.var(0); // argmax_i
+        DFEVar posterior = constant.var(0.0); // max_i
+        
+        // compute max_i { Pr(observed|i)*Pr(i|neighbors(i)) }
+        DFEVar posterior_max = constant.var(0.0);
+		for (i = 0; i < nColors; ++i){
+             posterior = Kernel.Math.pow((inImage-prior[i]),2) * invVar - beta * colorCounts[i];
+             result = (posterior > posterior_max) ? i : result;
+             posterior_max = (posterior > posterior_max) ? posterior : posterior_max;
+        }
+        
+		io.output("outImage", result, result.getType());
+	}
+}
