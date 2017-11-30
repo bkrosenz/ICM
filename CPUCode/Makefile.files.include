@@ -2,4 +2,4 @@
 # This file is managed by MaxIDE. Do NOT change.
 #
 HEADERS:= ppmIO.h 
-SOURCES:= SobelGaussianSolutionCpuCode.c ppmIO.c 
+SOURCES:= ICMCpuCode.c ppmIO.c 

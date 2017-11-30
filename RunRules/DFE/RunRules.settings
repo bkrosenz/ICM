@@ -6,9 +6,9 @@
 <enableMPCX enabled="false"/>
 </common>
 <maxFiles>
-<maxFile buildName="SobelGaussianSolution" buildOrUseExisting="build">
+<maxFile buildName="ICM" buildOrUseExisting="build">
 <runConfiguration askBeforeAutoBuild="true">
-<mainClass>sobelgaussian.SobelGaussianSolutionManager</mainClass>
+<mainClass>icm.ICMManager</mainClass>
 <maxHeapSize>2</maxHeapSize>
 </runConfiguration>
 <selectEngineTarget enabled="false">VECTIS</selectEngineTarget>
@@ -17,7 +17,7 @@
 </maxFiles>
 <cpuCode targetType="executable">
 <libraryName/>
-<exeName>SobelGaussianSolution</exeName>
+<exeName>ICM</exeName>
 <skin>
 <ancillaryReleaseInformation enabled="false">
 <dir name=""/>
