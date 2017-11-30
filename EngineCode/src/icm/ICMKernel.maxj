@@ -89,8 +89,9 @@ class ICMKernel extends Kernel {
 		DFEVar result = constant.var(dfeInt(32),0); // argmax_i
 
         DFEVar residual = inImage; // TODO: change to inImage-i*step, or replace iw with something like priors.read(i);
-         DFEVar post_black = residual * residual * invVar - b * black;
-         DFEVar post_white = residual * (256-residual) * invVar - b * (8-black); // 8 is neighborhood size
+	// posteriors:
+         DFEVar post_black = residual * residual * invVar - beta * black;
+         DFEVar post_white = residual * (256-residual) * invVar - beta * (8-black); // 8 is neighborhood size
         result = (post_black > post_white) ? constant.var(0) : constant.var(255);
 
 		io.output("outImage", result, result.getType());
