@@ -31,7 +31,7 @@ class SobelGaussianSolutionKernel extends Kernel {
 	    super(parameters);
 
 		int height = 256, width = 256, blockSize=1;
-		int neighborhoodSize = (2*blockSize+1)**2 - 1;
+		int neighborhoodSize = (2*blockSize+1)*(2*blockSize+1) - 1;
 		
 		DFEVar inImage = io.input("inImage", intType);
 
