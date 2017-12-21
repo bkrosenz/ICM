@@ -31,8 +31,8 @@ public class SobelGaussianSolutionManager {
 	static EngineInterface modeDefault() {
 		EngineInterface m = new EngineInterface();
 		InterfaceParam size = m.addParam("size", CPUTypes.INT32);
-		InterfaceParam prior = m.addParam("prior", CPUTypes.FLOAT);
 		m.setTicks("SobelGaussianSolutionKernel", size);
+//		InterfaceParam prior = m.addParam("prior", CPUTypes.FLOAT);
 		m.setStream("inImage", CPUTypes.INT32, size * CPUTypes.INT32.sizeInBytes());
 		m.setStream("outImage", CPUTypes.INT32, size * CPUTypes.INT32.sizeInBytes());
 		return m;
