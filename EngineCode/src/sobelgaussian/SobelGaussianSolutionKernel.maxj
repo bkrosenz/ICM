@@ -34,36 +34,36 @@ class SobelGaussianSolutionKernel extends Kernel {
 
 		DFEVar inImage = io.input("inImage", dfeInt(32));
 
-		DFEVar GaussianX = constant.var(0);
+		DFEVar countX = constant.var(0);
 
 		for (int x = 1; x <= blockSize; x++) {
 			DFEVar preAdd = constant.var(0);
 			preAdd = preAdd + stream.offset(inImage, x);
 			preAdd = preAdd + stream.offset(inImage, -x);
-			GaussianX = GaussianX + preAdd; //(preAdd * GaussianCoeffs[x + 3] / 1000);
+			countX = countX + preAdd; //(preAdd * GaussianCoeffs[x + 3] / 1000);
 		}
-		//		GaussianX = GaussianX + inImage; //(inImage * GaussianCoeffs[3] / 1000);
+		//		countX = countX + inImage; //(inImage * GaussianCoeffs[3] / 1000);
 
-		DFEVar GaussianY = constant.var(0);
+		DFEVar countY = constant.var(0);
 
 		for (int y = 1; y <= blockSize; y++) {
 			DFEVar preAdd = constant.var(0);
-			preAdd = preAdd + stream.offset(GaussianX, y * width);
-			preAdd = preAdd + stream.offset(GaussianX, -y * width);
-			GaussianY = GaussianY + preAdd;//(preAdd * GaussianCoeffs[y + 3] / 1000);
+			preAdd = preAdd + stream.offset(countX, y * width);
+			preAdd = preAdd + stream.offset(countX, -y * width);
+			countY = countY + preAdd;//(preAdd * GaussianCoeffs[y + 3] / 1000);
 		}
 
-		GaussianY = GaussianY + GaussianX;// * GaussianCoeffs[3] / 1000);
+		countY = countY + countX;// * GaussianCoeffs[3] / 1000);
 
 		DFEVar window[][] = new DFEVar[blockSize*2+1][blockSize*2+1]; // x, y
 
 		for (int x = -blockSize; x <= blockSize; x++)
 			for (int y = -blockSize; y <= blockSize; y++)
-				window[x + 1][y + 1] = stream.offset(GaussianY, y * width + x);
+				window[x + 1][y + 1] = stream.offset(countY, y * width + x);
 
 		DFEVar GxSum = constant.var(0);
 		DFEVar GySum = constant.var(0);
-		DFEVar black = GaussianY;
+		DFEVar black = countY;
 		
 		for (int x = 0; x < blockSize*2+1; x++) {
 			for (int y = 0; y < blockSize*2+1; y++) {

@@ -72,8 +72,10 @@ void loadImage(
 					pixel = ((pixel >> 16) & 0xff) * 3 / 10 + ((pixel >> 8)
 						& 0xff) * 59 / 100 + ((pixel) & 0xff) * 11 / 100;
 				// made pixel binary
-				//				(*dest)[pixelsRead] = pixel;
-				(*dest)[pixelsRead] = pixel < 128 ? 0 : 1;
+				if (1==grayscale)
+				    (*dest)[pixelsRead] = pixel;
+				else if (2==grayscale)
+				    (*dest)[pixelsRead] = pixel < 128 ? 0 : 1;
 				pixelsRead++;
 				break;
 		}

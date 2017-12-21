@@ -43,7 +43,6 @@ For a grayscale image, we can turn this into a c-thresholding algorithm, with c 
             val=inImage[x][y];
         }
     }
-
 */
 
 
