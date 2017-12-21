@@ -67,7 +67,7 @@ class SobelGaussianSolutionKernel extends Kernel {
 		//		DFEVar result = constant.var(dfeInt(32),0); // argmax_i
 
 		// prior = prior of being white
-		DFEVar residW = inImage.cast(floatType);//-prior;
+		DFEVar residW = inImage.cast(floatType)-prior;
 		DFEVar residB = inImage.cast(floatType)-1+prior;
 		DFEVar post_white = residW * residW * invVar - beta * countWhite.cast(floatType);
 		DFEVar post_black = residB * residB * invVar - beta * (neighborhoodSize-countWhite.cast(floatType));
