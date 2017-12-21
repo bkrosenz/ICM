@@ -68,7 +68,7 @@ class SobelGaussianSolutionKernel extends Kernel {
 
 		// prior = prior of being white
 		DFEVar residW = inImage.cast(floatType)-prior;
-		DFEVar residB = inImage-1+prior;
+		DFEVar residB = inImage.cast(floatType)-1+prior;
 		DFEVar post_white = residW * residW * invVar - beta * countWhite;
 		DFEVar post_black = residB * residB * invVar - beta * (neighborhoodSize-countWhite);
 		DFEVar result = post_black < post_white ? constant.var(intType,255) : 0; // can only multiplex on 2 streams or 1 stream and an int
