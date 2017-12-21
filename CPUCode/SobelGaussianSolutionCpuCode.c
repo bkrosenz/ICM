@@ -19,7 +19,7 @@ int main(void)
 	printf("Loading image.\n");
 	int32_t *inImage;
 	int width = 0, height = 0;
-	int nIters = 20;
+	int nIters = 5;
 	loadImage("lena.ppm", &inImage, &width, &height, 1);
 
 	int dataSize = width * height * sizeof(int);
@@ -37,6 +37,6 @@ int main(void)
 
 	printf("Saving image.\n");
 	writeImage("lena_sobelgaussian.ppm", outImage, width, height, 1);
-
+	writeImage("lena_bw.ppm", inImage, width, height, 1);
 	return 0;
 }
