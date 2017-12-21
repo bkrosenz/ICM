@@ -20,23 +20,33 @@ int main(void)
 	int32_t *inImage;
 	int width = 0, height = 0;
 	int nIters = 5;
-	loadImage("lena.ppm", &inImage, &width, &height, 2);
+	loadImage("lena_grayscale_noisy.ppm", &inImage, &width, &height, 2);
 
 	int dataSize = width * height * sizeof(int);
 	// Allocate a buffer for the intermediate image
 	int32_t *tmpImage = malloc(dataSize);
 	// Allocate a buffer for the output image
 	int32_t *outImage = malloc(dataSize);
+	
+	float prior = get_prior(&inImage);
 
 	printf("Running Kernel.\n");
-	SobelGaussianSolution(width * height, inImage, outImage);
+	SobelGaussianSolution(width * height, prior, inImage, outImage);
 	for (int i=0; i<nIters; ++i){
 	  tmpImage = outImage;
 	  SobelGaussianSolution(width * height, tmpImage, outImage);
 	}
 
 	printf("Saving image.\n");
-	writeImage("lena_sobelgaussian.ppm", outImage, width, height, 1);
-	writeImage("lena_bw.ppm", inImage, width, height, 1);
+	writeImage("lena_icm.ppm", outImage, width, height, 1);
+//	writeImage("lena_bw.ppm", inImage, width, height, 1);
 	return 0;
+}
+
+// get overall fraction of white sites (prior)
+float get_prior(int **dest, int *size){
+    float p = 0.0;
+    for (int i = 0; i<*size; ++i)
+	p+=(*dest)[i];
+    return p/=size;
 }

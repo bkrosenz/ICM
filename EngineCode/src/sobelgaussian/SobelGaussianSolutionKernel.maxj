@@ -22,7 +22,7 @@ import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEType;
 
 class SobelGaussianSolutionKernel extends Kernel {
    private final double beta = 1.5; // interaction parameter
-    private final double invVar = 5.0; // 1/(2*variance) of gaussian noise, since div is more costly than mult
+    private final double invVar = 0.5; // 1/(2*variance) of gaussian noise, assuming noise is ~ N(0,1)
     private final int nColors = 2;
     static final DFEType floatType = dfeFloat(8, 24);
     static final DFEType intType = dfeUInt(32);
@@ -31,8 +31,11 @@ class SobelGaussianSolutionKernel extends Kernel {
 	    super(parameters);
 
 		int height = 256, width = 256, blockSize=1;
+		int neighborhoodSize = (2*blockSize+1)**2 - 1;
+		
+		DFEVar inImage = io.input("inImage", intType);
 
-		DFEVar inImage = io.input("inImage", dfeInt(32));
+		DFEVar prior = io.input("prior", floatType);
 
 		DFEVar countX = constant.var(0);
 
@@ -42,46 +45,32 @@ class SobelGaussianSolutionKernel extends Kernel {
 			preAdd = preAdd + stream.offset(inImage, -x);
 			countX = countX + preAdd; //(preAdd * GaussianCoeffs[x + 3] / 1000);
 		}
-		//		countX = countX + inImage; //(inImage * GaussianCoeffs[3] / 1000);
 
-		DFEVar countY = constant.var(0);
+		DFEVar countWhite = constant.var(0);
 
 		for (int y = 1; y <= blockSize; y++) {
 			DFEVar preAdd = constant.var(0);
 			preAdd = preAdd + stream.offset(countX, y * width);
 			preAdd = preAdd + stream.offset(countX, -y * width);
-			countY = countY + preAdd;//(preAdd * GaussianCoeffs[y + 3] / 1000);
+			countWhite = countWhite + preAdd;//(preAdd * GaussianCoeffs[y + 3] / 1000);
 		}
 
-		countY = countY + countX;// * GaussianCoeffs[3] / 1000);
+		countWhite = countWhite + countX;// * GaussianCoeffs[3] / 1000);
 
-		DFEVar window[][] = new DFEVar[blockSize*2+1][blockSize*2+1]; // x, y
+		// DFEVar window[][] = new DFEVar[blockSize*2+1][blockSize*2+1]; // x, y
+		// for (int x = -blockSize; x <= blockSize; x++)
+		// 	for (int y = -blockSize; y <= blockSize; y++)
+		// 		window[x + 1][y + 1] = stream.offset(countWhite, y * width + x);
 
-		for (int x = -blockSize; x <= blockSize; x++)
-			for (int y = -blockSize; y <= blockSize; y++)
-				window[x + 1][y + 1] = stream.offset(countY, y * width + x);
-
-		DFEVar GxSum = constant.var(0);
-		DFEVar GySum = constant.var(0);
-		DFEVar black = countY;
-		
-		for (int x = 0; x < blockSize*2+1; x++) {
-			for (int y = 0; y < blockSize*2+1; y++) {
-			    GxSum = GxSum + window[x][y];
-			    GySum = GySum + window[x][y];
-			}
-		}
-
-		DFEVar absGxSum = GxSum >= 0 ? GxSum : -GxSum;
-		DFEVar absGySum = GySum >= 0 ? GySum : -GySum;
+		// DFEVar absGxSum = GxSum >= 0 ? GxSum : -GxSum;
+		// DFEVar absGySum = GySum >= 0 ? GySum : -GySum;
 
 		//		DFEVar result = constant.var(dfeInt(32),0); // argmax_i
 
-		DFEVar residual = inImage; // TODO: change to inImage-i*step, or replace iw with something like priors.read(i);
-		// posteriors:
-		DFEVar post_black = residual * residual * invVar - beta * black;
-		DFEVar post_white = residual * (1-residual) * invVar - beta * (8-black); // 8 is neighborhood size
-		DFEVar result = post_black < post_white ? constant.var(dfeInt(32),255) : 0; // can only multiplex on 2 streams or 1 stream and an int
+		// prior = prior of being white
+		DFEVar post_white = (inImage-prior) * (inImage-prior) * invVar - beta * countWhite;
+		DFEVar post_black = (inImage-1+prior) * (inImage-1+prior) * invVar - beta * (neighborhoodSize-countWhite);
+		DFEVar result = post_black < post_white ? constant.var(intType,255) : 0; // can only multiplex on 2 streams or 1 stream and an int
 
 		//		DFEVar result = absGxSum + absGySum;
 		CounterChain chain = control.count.makeCounterChainMoreBits();
