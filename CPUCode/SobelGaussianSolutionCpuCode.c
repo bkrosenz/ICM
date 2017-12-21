@@ -20,7 +20,7 @@ int main(void)
 	int32_t *inImage;
 	int width = 0, height = 0;
 	int nIters = 5;
-	loadImage("lena.ppm", &inImage, &width, &height, 1);
+	loadImage("lena.ppm", &inImage, &width, &height, 2);
 
 	int dataSize = width * height * sizeof(int);
 	// Allocate a buffer for the intermediate image
