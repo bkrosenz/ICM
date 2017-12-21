@@ -36,7 +36,7 @@ int main(void)
 	// Allocate a buffer for the output image
 	int32_t *outImage = malloc(dataSize);
 	
-	float prior = get_prior(&inImage);
+	float prior = get_prior(&inImage,&dataSize);
 
 	printf("Running Kernel.\n");
 	SobelGaussianSolution(width * height, prior, inImage, outImage);
