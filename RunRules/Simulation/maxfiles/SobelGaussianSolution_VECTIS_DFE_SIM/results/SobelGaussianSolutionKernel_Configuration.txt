@@ -1,1 +1,0 @@
-../scratch/SobelGaussianSolutionKernel_Configuration.txt
