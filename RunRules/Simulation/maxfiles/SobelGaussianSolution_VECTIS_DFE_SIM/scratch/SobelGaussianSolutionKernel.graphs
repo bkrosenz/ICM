@@ -1,0 +1,16 @@
+Thu Dec 21 04:37:10 CET 2017
+SobelGaussianSolutionKernel
+original
+SobelGaussianSolutionKernel_original.dot
+pre_dsp_extraction
+SobelGaussianSolutionKernel_pre_dsp_extraction.dot
+optimised
+SobelGaussianSolutionKernel_optimised.dot
+tapnfold_1
+SobelGaussianSolutionKernel_tapnfold_1.dot
+validated_fifos
+SobelGaussianSolutionKernel_validated_fifos.dot
+tapnfold_2
+SobelGaussianSolutionKernel_tapnfold_2.dot
+final
+SobelGaussianSolutionKernel_final.dot

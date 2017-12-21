@@ -1,0 +1,1404 @@
+NodeID     : 0
+Node       : Scalar input (io_inImage_force_disabled)
+Node type  : NodeInputMappedReg
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:606)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:35)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 1
+Node       : ~
+Node type  : NodeNot
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:606)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:35)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 2
+Node       : Input(inImage)
+Node type  : NodeInput
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:606)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:35)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 3
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:86)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:37)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 4
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:86)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:40)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 5
+Node       : stream offset: 1
+Node type  : NodeStreamOffset
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:41)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 6
+Node       : +
+Node type  : NodeAdd
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:41)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 7
+Node       : stream offset: -1
+Node type  : NodeStreamOffset
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:42)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 8
+Node       : +
+Node type  : NodeAdd
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:42)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 9
+Node       : +
+Node type  : NodeAdd
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:43)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 10
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:86)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:47)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 11
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:86)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:50)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 12
+Node       : stream offset: 256
+Node type  : NodeStreamOffset
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:51)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 13
+Node       : +
+Node type  : NodeAdd
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:51)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 14
+Node       : stream offset: -256
+Node type  : NodeStreamOffset
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:52)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 15
+Node       : +
+Node type  : NodeAdd
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:52)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 16
+Node       : +
+Node type  : NodeAdd
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:53)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 17
+Node       : +
+Node type  : NodeAdd
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:56)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 18
+Node       : stream offset: -257
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 19
+Node       : stream offset: -1
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 20
+Node       : stream offset: 255
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 21
+Node       : stream offset: -256
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 22
+Node       : stream offset: 0
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 23
+Node       : stream offset: 256
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 24
+Node       : stream offset: -255
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 25
+Node       : stream offset: 1
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 26
+Node       : stream offset: 257
+Node type  : NodeStreamOffset
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:62)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 27
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:86)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:64)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 28
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:86)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:65)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 29
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 30
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 31
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 32
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 33
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 34
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 35
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 36
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 37
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 38
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 39
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 40
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 41
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 42
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 43
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 44
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 45
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:70)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 46
+Node       : +
+Node type  : NodeAdd
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:71)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 47
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gte(DFEVar.java:753)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:75)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 48
+Node       : >=
+Node type  : NodeGte
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gte(DFEVar.java:753)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:75)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 49
+Node       : (-)
+Node type  : NodeNeg
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.neg(DFEVar.java:1070)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:75)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 50
+Node       : MUX
+Node type  : NodeMux
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1160)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:75)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 51
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gte(DFEVar.java:753)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:76)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 52
+Node       : >=
+Node type  : NodeGte
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gte(DFEVar.java:753)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:76)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 53
+Node       : (-)
+Node type  : NodeNeg
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.neg(DFEVar.java:1070)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:76)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 54
+Node       : MUX
+Node type  : NodeMux
+Removed by : [Init Graph]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1160)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:76)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 55
+Node       : *
+Node type  : NodeMul
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:968)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 56
+Node       : 5.0
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:973)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 57
+Node       : *
+Node type  : NodeMul
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:973)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 110
+  Node       : <{HWOffsetFix:32, 2, TWOSCOMPLEMENT}>
+  Node type  : NodeReinterpret
+  Creator    : OptimiseNodesPass
+
+  NodeID     : 111
+  Node       : +
+  Node type  : NodeAdd
+  Creator    : OptimiseNodesPass
+
+  NodeID     : 112
+  Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}
+  Node type  : NodeCast
+  Creator    : OptimiseNodesPass
+
+------------
+NODE WAS REMOVED!
+NodeID     : 58
+Node       : 1.5
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mulAsRHS(DFEVar.java:993)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 59
+Node       : *
+Node type  : NodeMul
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mulAsRHS(DFEVar.java:993)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 113
+  Node       : <{HWOffsetFix:32, 1, TWOSCOMPLEMENT}>
+  Node type  : NodeReinterpret
+  Creator    : OptimiseNodesPass
+
+  NodeID     : 114
+  Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}
+  Node type  : NodeCast
+  Creator    : OptimiseNodesPass
+
+------------
+NodeID     : 60
+Node       : -
+Node type  : NodeSub
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.sub(DFEVar.java:922)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 61
+Node       : 1.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.subAsRHS(DFEVar.java:957)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 135
+  Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}\n0x00000001; 1.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 62
+Node       : -
+Node type  : NodeSub
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.subAsRHS(DFEVar.java:957)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 63
+Node       : *
+Node type  : NodeMul
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:968)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 64
+Node       : 5.0
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:973)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 65
+Node       : *
+Node type  : NodeMul
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:973)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 115
+  Node       : <{HWOffsetFix:32, 2, TWOSCOMPLEMENT}>
+  Node type  : NodeReinterpret
+  Creator    : OptimiseNodesPass
+
+  NodeID     : 116
+  Node       : +
+  Node type  : NodeAdd
+  Creator    : OptimiseNodesPass
+
+  NodeID     : 117
+  Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}
+  Node type  : NodeCast
+  Creator    : OptimiseNodesPass
+
+------------
+NODE WAS REMOVED!
+NodeID     : 66
+Node       : 8.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.subAsRHS(DFEVar.java:957)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 134
+  Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}\n0x00000008; 8.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 67
+Node       : -
+Node type  : NodeSub
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.subAsRHS(DFEVar.java:957)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 68
+Node       : 1.5
+Node type  : NodeConstantDouble
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mulAsRHS(DFEVar.java:993)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 69
+Node       : *
+Node type  : NodeMul
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mulAsRHS(DFEVar.java:993)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 118
+  Node       : <{HWOffsetFix:32, 1, TWOSCOMPLEMENT}>
+  Node type  : NodeReinterpret
+  Creator    : OptimiseNodesPass
+
+  NodeID     : 119
+  Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}
+  Node type  : NodeCast
+  Creator    : OptimiseNodesPass
+
+------------
+NodeID     : 70
+Node       : -
+Node type  : NodeSub
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.sub(DFEVar.java:922)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:83)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 71
+Node       : <
+Node type  : NodeLt
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:830)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:84)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 72
+Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}\n0x000000ff; 255.0
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Constant.var(Constant.java:96)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:84)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 73
+Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}\n0x00000000; 0.0
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1173)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:84)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 74
+Node       : MUX
+Node type  : NodeMux
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1173)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:84)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 75
+Node       : {HWOffsetFix:1, 0, UNSIGNED}\n0x1; 1.0
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Count.makeCounterChainMoreBits(Count.java:472)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:87)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 76
+Node       : 256.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:504)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:88)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 138
+  Node       : {HWOffsetFix:10, 0, UNSIGNED}\n0x100; 256.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 77
+Node       : Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0
+Node type  : NodeCounterV1
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:504)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:88)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 78
+Node       : 256.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:504)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:89)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 141
+  Node       : {HWOffsetFix:10, 0, UNSIGNED}\n0x100; 256.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 79
+Node       : Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0
+Node type  : NodeCounterV1
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:504)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:89)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 80
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gt(DFEVar.java:799)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 140
+  Node       : {HWOffsetFix:9, 0, UNSIGNED}\n0x000; 0.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 81
+Node       : >
+Node type  : NodeGt
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gt(DFEVar.java:799)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 82
+Node       : 255.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:845)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 139
+  Node       : {HWOffsetFix:9, 0, UNSIGNED}\n0x0ff; 255.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 83
+Node       : <
+Node type  : NodeLt
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:845)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 84
+Node       : &
+Node type  : NodeAnd
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:530)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 85
+Node       : 0.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gt(DFEVar.java:799)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 137
+  Node       : {HWOffsetFix:9, 0, UNSIGNED}\n0x000; 0.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 86
+Node       : >
+Node type  : NodeGt
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.gt(DFEVar.java:799)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 87
+Node       : 255.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:845)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+Led to:
+  NodeID     : 136
+  Node       : {HWOffsetFix:9, 0, UNSIGNED}\n0x0ff; 255.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 88
+Node       : <
+Node type  : NodeLt
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:845)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 89
+Node       : &
+Node type  : NodeAnd
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:530)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 90
+Node       : &
+Node type  : NodeAnd
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:530)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 91
+Node       : {HWOffsetFix:32, 0, TWOSCOMPLEMENT}\n0x00000000; 0.0
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1173)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 92
+Node       : MUX
+Node type  : NodeMux
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1173)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:91)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 93
+Node       : {HWOffsetFix:1, 0, UNSIGNED}\n0x1; 1.0
+Node type  : NodeConstantRawBits
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.output(IO.java:816)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:94)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 94
+Node       : Scalar input (io_outImage_force_disabled)
+Node type  : NodeInputMappedReg
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.output(IO.java:816)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:94)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 95
+Node       : ~
+Node type  : NodeNot
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.output(IO.java:816)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:94)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 96
+Node       : &
+Node type  : NodeAnd
+Removed by : [OptimiseNodesPass]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.output(IO.java:816)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:94)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NodeID     : 97
+Node       : Output(outImage)
+Node type  : NodeOutput
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.output(IO.java:816)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:94)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 98
+Node       : 1.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+Led to:
+  NodeID     : 133
+  Node       : {HWOffsetFix:1, 0, UNSIGNED}\n0x1; 1.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 99
+Node       : {HWOffsetFix:49, 0, UNSIGNED}\n0x1000000000000; 2.81474976710656E14
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 100
+Node       : Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0
+Node type  : NodeCounterV1
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 101
+Node       : stream offset: 1
+Node type  : NodeStreamOffset
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 102
+Node       : {HWOffsetFix:1, 0, UNSIGNED}\n0x1; 1.0
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 103
+Node       : Scalar output (current_run_cycle_count)
+Node type  : NodeOutputMappedReg
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 104
+Node       : 1.0
+Node type  : NodeConstantDouble
+Removed by : [RemoveUntypedConstants]
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+Led to:
+  NodeID     : 132
+  Node       : {HWOffsetFix:1, 0, UNSIGNED}\n0x1; 1.0
+  Node type  : NodeConstantRawBits
+  Creator    : RemoveUntypedConstants
+
+------------
+NodeID     : 105
+Node       : {HWOffsetFix:49, 0, UNSIGNED}\n0x1000000000000; 2.81474976710656E14
+Node type  : NodeConstantRawBits
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 106
+Node       : Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0
+Node type  : NodeCounterV1
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 107
+Node       : flush on trigger
+Node type  : NodeFlush
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 108
+Node       : Scalar input (run_cycle_count)
+Node type  : NodeInputMappedReg
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NodeID     : 109
+Node       : ==
+Node type  : NodeEq
+Creator    : User
+Stack Trace:
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+
+------------
+NODE WAS REMOVED!
+NodeID     : 120
+Node       : FIFO(253)
+Node type  : NodeFIFO
+Removed by : [TapFIFOsPass]
+Creator    : ScheduleApplier
+Led to:
+  NodeID     : 131
+  Node       : FIFO(1)
+  Node type  : NodeFIFO
+  Creator    : TapFIFOsPass
+
+------------
+NODE WAS REMOVED!
+NodeID     : 121
+Node       : FIFO(253)
+Node type  : NodeFIFO
+Removed by : [TapFIFOsPass]
+Creator    : ScheduleApplier
+------------
+NodeID     : 122
+Node       : FIFO(2)
+Node type  : NodeFIFO
+Creator    : ScheduleApplier
+------------
+NodeID     : 123
+Node       : FIFO(257)
+Node type  : NodeFIFO
+Creator    : ScheduleApplier
+------------
+NodeID     : 124
+Node       : FIFO(255)
+Node type  : NodeFIFO
+Creator    : ScheduleApplier
+------------
+NODE WAS REMOVED!
+NodeID     : 125
+Node       : FIFO(257)
+Node type  : NodeFIFO
+Removed by : [TapFIFOsPass]
+Creator    : ScheduleApplier
+------------
+NODE WAS REMOVED!
+NodeID     : 126
+Node       : FIFO(252)
+Node type  : NodeFIFO
+Removed by : [TapFIFOsPass]
+Creator    : ScheduleApplier
+Led to:
+  NodeID     : 130
+  Node       : FIFO(250)
+  Node type  : NodeFIFO
+  Creator    : TapFIFOsPass
+
+------------
+NODE WAS REMOVED!
+NodeID     : 127
+Node       : FIFO(253)
+Node type  : NodeFIFO
+Removed by : [TapFIFOsPass]
+Creator    : ScheduleApplier
+------------
+NodeID     : 128
+Node       : FIFO(1)
+Node type  : NodeFIFO
+Creator    : ScheduleApplier
+------------
+NodeID     : 129
+Node       : FIFO(1)
+Node type  : NodeFIFO
+Creator    : ScheduleApplier
+------------

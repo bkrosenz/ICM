@@ -1,0 +1,31 @@
+NodeAdd + {HWOffsetFix:32, 0, TWOSCOMPLEMENT} ID: 8
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:876)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:42)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+	FIFO(257) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 257 ID: 123
+
+NodeStreamOffset stream offset: -256 {HWOffsetFix:32, 0, TWOSCOMPLEMENT} ID: 14
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.offset(Stream.java:225)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:52)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+	FIFO(255) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 255 ID: 124
+
+NodeInput Input(inImage) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} ID: 2
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:606)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:35)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+	FIFO(250) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 250 ID: 130
+	FIFO(2) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 2 ID: 122
+	FIFO(1) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 1 ID: 131
+
+NodeSub - {HWOffsetFix:32, 0, TWOSCOMPLEMENT} ID: 60
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.sub(DFEVar.java:922)
+sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:82)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+	FIFO(1) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 1 ID: 129
+
+NodeCast {HWOffsetFix:32, 0, TWOSCOMPLEMENT} {HWOffsetFix:32, 0, TWOSCOMPLEMENT} ID: 117
+com.maxeler.maxcompiler.v2.managers.DFEManager.build(DFEManager.java:373)
+sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:28)
+	FIFO(1) {HWOffsetFix:32, 0, TWOSCOMPLEMENT} 1 ID: 128
+

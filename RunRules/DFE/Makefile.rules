@@ -49,20 +49,20 @@ build: maxfiles
 maxfiles: $(MAXFILES_MAX)
 
 #
-# MaxFile: ICM
+# MaxFile: SobelGaussianSolution
 #
 
 
-BUILDNAME_MAXFILE_1:=ICM
-MAXFILE_1:=ICM.max
+BUILDNAME_MAXFILE_1:=SobelGaussianSolution
+MAXFILE_1:=SobelGaussianSolution.max
 
-include/ICM.h: maxfiles/ICM.h
+include/SobelGaussianSolution.h: maxfiles/SobelGaussianSolution.h
 	cp $< $@
 
-maxfiles/ICM.max maxfiles/ICM.h:
+maxfiles/SobelGaussianSolution.max maxfiles/SobelGaussianSolution.h:
 # Ensure that maxfiles do not get build by this Makefile when running in MaxIDE
 ifndef MAXIDE_RUN
-	env  MAX_BUILDPARAMS=" DFEModel=VECTIS  target=DFE_SIM  maxFileName=ICM "  ant -v -f ICM.xml
+	env  MAX_BUILDPARAMS=" DFEModel=VECTIS  target=DFE_SIM  maxFileName=SobelGaussianSolution "  ant -v -f SobelGaussianSolution.xml
 else
 	test -f $@ || ( echo 'Maxfile unavailable: $@' >/dev/stderr ; exit 1 )
 endif

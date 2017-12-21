@@ -1,0 +1,13 @@
+*** After kernel graph-pass 'Init Graph' ***
+node "MUX" (ID 50) has unconnected outputs: [result]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1160)
+	sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:75)
+	sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+	
+node "MUX" (ID 54) has unconnected outputs: [result]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1160)
+	sobelgaussian.SobelGaussianSolutionKernel.<init>(SobelGaussianSolutionKernel.maxj:76)
+	sobelgaussian.SobelGaussianSolutionManager.main(SobelGaussianSolutionManager.maxj:24)
+	
