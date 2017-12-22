@@ -34,7 +34,7 @@ class SobelGaussianSolutionKernel extends Kernel {
 		
 		DFEVar inImage = io.input("inImage", intType);
 
-		DFEVar prior = io.input("prior", floatType);
+		DFEVar prior = io.scalarInput("prior", floatType);
 
 		DFEVar countX = constant.var(0);
 
