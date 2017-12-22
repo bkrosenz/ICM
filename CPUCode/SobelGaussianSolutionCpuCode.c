@@ -41,7 +41,8 @@ int main(void)
 	printf("Running Kernel.\n");
 	SobelGaussianSolution(width * height, prior, inImage, outImage);
 	for (int i=0; i<nIters; ++i){
-	  tmpImage = outImage;
+	  for (int j=0; j< dataSize; j++)
+	    tmpImage[j] = outImage[j];
 	  SobelGaussianSolution(width * height, prior, tmpImage, outImage);
 	}
 
