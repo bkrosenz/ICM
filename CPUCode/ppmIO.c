@@ -20,7 +20,7 @@
  * \param [out] dest Buffer into which to write the image
  * \param [out] width Width of the image in pixels as read from the .ppm file
  * \param [out] height Height of the image in pixels as read from the .ppm file
- * \param [in] grayscale Whether to load the image in grayscale (1) or color (=0) or black and white (2)
+ * \param [in] grayscale Whether to load the image in grayscale (1) or color (!=1)
  */
 void loadImage(
 	char *filename,
@@ -71,11 +71,7 @@ void loadImage(
 				if (grayscale)
 					pixel = ((pixel >> 16) & 0xff) * 3 / 10 + ((pixel >> 8)
 						& 0xff) * 59 / 100 + ((pixel) & 0xff) * 11 / 100;
-				// made pixel binary
-				if (1==grayscale)
-				    (*dest)[pixelsRead] = pixel;
-				else if (2==grayscale)
-				    (*dest)[pixelsRead] = pixel < 128 ? 0 : 1;
+				(*dest)[pixelsRead] = pixel;
 				pixelsRead++;
 				break;
 		}
