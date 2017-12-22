@@ -47,6 +47,7 @@ int main(void)
 	}
 
 	printf("Saving image.\n");
+	printf("height: %d.  width: %d.",height, width);
 	writeImage("lena_icm.ppm", outImage, width, height, 1);
 	writeImage("lena_bw_noisy.ppm", inImage, width, height, 1);
 	return 0;
