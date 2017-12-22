@@ -26,10 +26,10 @@ int main(void)
 {
 	printf("Loading image.\n");
 	int32_t *inImage;
-	int width = 256, height = 256;
+	int width = 0, height = 0;
 	int nIters = 5;
 	loadImage("lena_grayscale_noisy.ppm", &inImage, &width, &height, 2);
-
+	printf("height: %d.  width: %d.",height, width);
 	int dataSize = width * height * sizeof(int);
 	// Allocate a buffer for the intermediate image
 	int32_t *tmpImage = malloc(dataSize);
