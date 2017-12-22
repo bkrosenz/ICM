@@ -17,8 +17,12 @@
 // get overall fraction of white sites (prior)
 float get_prior(int **dest, int *size){
     float p = 0.0;
-    for (int i = 0; i<*size; ++i)
+	printf("in main. getting prior\n");
+    for (int i = 0; i<*size; ++i){
+	printf("val: %d at %d. size=%d\n",(*dest)[i],i,*size);
 	p+=(*dest)[i];
+}
+printf("got priors\n");
     return p/=*size;
 }
 
@@ -28,16 +32,19 @@ int main(void)
 	int32_t *inImage;
 	int width = 0, height = 0;
 	int nIters = 5;
-	loadImage("lena_grayscale_noisy.ppm", &inImage, &width, &height, 1);
-	printf("height: %d.  width: %d.",height, width);
+	loadImage("lena.ppm", &inImage, &width, &height, 1);
+	printf("in main\n");
+	printf("loaded. height: %d.  width: %d.",height, width);
+	int imsize = width*height;
 	int dataSize = width * height * sizeof(int);
 	// Allocate a buffer for the intermediate image
+	
 	int32_t *tmpImage = malloc(dataSize);
 	// Allocate a buffer for the output image
 	int32_t *outImage = malloc(dataSize);
+	printf("in main.allocating\n");
+	float prior = get_prior(&inImage,&imsize);
 	
-	float prior = get_prior(&inImage,&dataSize);
-
 	printf("Running Kernel.\n");
 	SobelGaussianSolution(width * height, prior, inImage, outImage);
 	for (int i=0; i<nIters; ++i){

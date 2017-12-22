@@ -32,15 +32,16 @@ void loadImage(
 	// hack to make the buffer big enough
 	char buffer[200];
 	FILE *file = fopen(filename, "r");
-
+	printf("loading\n");
 	if (file == NULL) {
 		printf("Error opening file %s.", filename);
 		exit(1);
 	}
-	fgets(buffer, 200, file); // Type
+	fgets(buffer, 199, file); // Type
 	// assume no comment for now
 	fscanf(file, "%d %d\n", width, height);
 	fgets(buffer, 200, file); // Max intensity
+        printf("height: %d.  width: %d.\n",*height, *width);
 
 	*dest = malloc((*width) * (*height) * sizeof(int));
 
@@ -76,7 +77,9 @@ void loadImage(
 				break;
 		}
 	}
+	printf("loaded file.\n");
 	fclose(file);
+	printf("loaded file.\n");
 }
 
 /**
