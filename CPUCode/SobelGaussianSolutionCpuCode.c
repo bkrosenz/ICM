@@ -26,7 +26,7 @@ int main(void)
 {
 	printf("Loading image.\n");
 	int32_t *inImage;
-	int width = 0, height = 0;
+	int width = 256, height = 256;
 	int nIters = 5;
 	loadImage("lena_grayscale_noisy.ppm", &inImage, &width, &height, 2);
 
