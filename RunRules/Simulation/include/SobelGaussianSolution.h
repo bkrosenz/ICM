@@ -54,6 +54,7 @@ max_run_t *SobelGaussianSolution_nonblock(
  */
 typedef struct { 
 	int32_t param_size; /**<  [in] Interface Parameter "size". */
+	float param_prior,
 	const int32_t *instream_inImage; /**<  [in] The stream should be of size (param_size * 4) bytes. */
 	int32_t *outstream_outImage; /**<  [out] The stream should be of size (param_size * 4) bytes. */
 } SobelGaussianSolution_actions_t;
