@@ -25,6 +25,7 @@ extern "C" {
  */
 void SobelGaussianSolution(
 	int32_t param_size,
+	float param_prior,
 	const int32_t *instream_inImage,
 	int32_t *outstream_outImage);
 
@@ -43,6 +44,7 @@ void SobelGaussianSolution(
  */
 max_run_t *SobelGaussianSolution_nonblock(
 	int32_t param_size,
+	float param_prior,
 	const int32_t *instream_inImage,
 	int32_t *outstream_outImage);
 
