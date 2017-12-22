@@ -42,7 +42,7 @@ int main(void)
 	SobelGaussianSolution(width * height, prior, inImage, outImage);
 	for (int i=0; i<nIters; ++i){
 	  tmpImage = outImage;
-	  SobelGaussianSolution(width * height, tmpImage, outImage);
+	  SobelGaussianSolution(width * height, prior, tmpImage, outImage);
 	}
 
 	printf("Saving image.\n");
